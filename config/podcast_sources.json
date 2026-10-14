@@ -1,0 +1,20 @@
+[
+  {
+    "source_id": "imf-podcasts",
+    "publisher_id": "imf",
+    "kind": "podcast",
+    "url": "https://rss.libsyn.com/shows/78322/destinations/355221.xml"
+  },
+  {
+    "source_id": "world-bank-development",
+    "publisher_id": "world-bank",
+    "kind": "podcast",
+    "url": "https://world-bank-development-podcast.captivate.fm/rssfeed"
+  },
+  {
+    "source_id": "reuters-econ-world",
+    "publisher_id": "reuters",
+    "kind": "podcast",
+    "url": "https://feeds.megaphone.fm/reuterseconworld"
+  }
+]

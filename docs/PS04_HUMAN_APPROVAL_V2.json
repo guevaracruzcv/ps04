@@ -1,0 +1,21 @@
+{
+  "approval_id": "a589cd099dee6f96",
+  "policy_version": "v2",
+  "recorded_at_utc": "2026-10-11T15:51:21Z",
+  "policy_sha256": "92f79fe975c33b302d069b52b639b3e6c344fb8a4b08cb41867ee9c0291f8126",
+  "human_decisions": {
+    "ACCEPT": 9,
+    "DEFER": 3,
+    "REJECT": 0
+  },
+  "unchanged_decisions_carried_forward": 11,
+  "changes_explicitly_approved": [
+    {
+      "item_id": "feed:4564112263663773",
+      "title": "Using AI to mitigate the growing environmental threat of data centers",
+      "from": "REJECT",
+      "to": "DEFER"
+    }
+  ],
+  "publication_authorized": false
+}

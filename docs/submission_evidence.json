@@ -1,0 +1,1274 @@
+{
+  "purpose": "Public academic inspection sample; not a runnable recovery archive, new pipeline output or publication approval",
+  "prepared_date": "2026-10-14",
+  "student": "Guevara Cruz",
+  "run_summaries": [
+    {
+      "run_id": "editorial-live-064ea894fd3d49a981b19dca77a0729b",
+      "mode": "live",
+      "status": "failed",
+      "publication_authorized": false,
+      "counts": {
+        "discovered": 64,
+        "extracted": 60,
+        "eligible": 38,
+        "excluded": 27,
+        "articles": null,
+        "video_scripts": null,
+        "new": 6,
+        "changed": 1,
+        "unchanged": 53,
+        "accepted": null,
+        "rejected": null,
+        "deferred": null
+      },
+      "source_coverage": {
+        "distinct_items": 38,
+        "by_kind": {
+          "feed": 34,
+          "podcast": 2,
+          "youtube": 2
+        },
+        "independent_publishers": [
+          "fctl",
+          "harvard",
+          "imf",
+          "mit",
+          "reuters",
+          "sigma",
+          "world-bank"
+        ],
+        "discovery_methods": {
+          "rss": 29,
+          "direct_webpage": 5,
+          "podcast_rss": 2,
+          "youtube": 2
+        }
+      },
+      "corpus_scope": "fresh_collection_and_verified_reuse",
+      "duplicate_observations": 0,
+      "failed_stages": [
+        "select_items",
+        "create_series"
+      ],
+      "incomplete_stages": [
+        "create_briefs",
+        "write_articles",
+        "write_video_scripts",
+        "check_content"
+      ],
+      "errors": [],
+      "elapsed_seconds": 104.201623,
+      "known_cost_usd": 0,
+      "unknown_cost_stages": [
+        "extract_content",
+        "fetch_feeds",
+        "fetch_podcasts",
+        "fetch_youtube",
+        "select_items"
+      ],
+      "model_tool_use": [
+        {
+          "stage": "collect_sources",
+          "model": null,
+          "tool": "Python standard library",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "create_series",
+          "model": null,
+          "tool": "Python standard library",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "extract_content",
+          "model": null,
+          "tool": "Existing extraction/cache/yt_dlp",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "fetch_feeds",
+          "model": null,
+          "tool": "Python RSS / yt_dlp",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "fetch_podcasts",
+          "model": null,
+          "tool": "Python RSS / yt_dlp",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "fetch_youtube",
+          "model": null,
+          "tool": "Python RSS / yt_dlp",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "filter_items",
+          "model": null,
+          "tool": "Python standard library",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "select_items",
+          "model": "gpt-6-luna",
+          "tool": "OpenAI Responses API",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": true,
+          "provider_request_attempted": true,
+          "usage": {
+            "input_tokens": 485805,
+            "input_tokens_details": {
+              "cache_write_tokens": 485802,
+              "cached_tokens": 0
+            },
+            "output_tokens": 5388,
+            "output_tokens_details": {
+              "reasoning_tokens": 1615
+            },
+            "total_tokens": 491193
+          }
+        },
+        {
+          "stage": "store_init",
+          "model": null,
+          "tool": "SQLite",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "store_list",
+          "model": null,
+          "tool": "SQLite",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "store_list",
+          "model": null,
+          "tool": "SQLite",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "store_upsert",
+          "model": null,
+          "tool": "SQLite",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        }
+      ],
+      "coverage_limitations": [
+        "Collection infrastructure limitations remain explicit",
+        "Unmatched podcast candidates remain unprocessed; no new audio/transcription was authorized",
+        "Source media/caption context and interpretations require human verification"
+      ],
+      "published_links": null,
+      "remaining_manual_actions": [
+        "Resolve blocking review issues",
+        "Human final-content review",
+        "Video production",
+        "Separate publication authorization",
+        "Academic submission and technical demonstration"
+      ],
+      "cached_candidate_count": 6,
+      "fresh_discovery_count": 58,
+      "unprocessed_candidate_count": 4,
+      "api_usage": [
+        {
+          "stage": "select_items",
+          "mode": "model_response",
+          "model": "gpt-6-luna",
+          "usage": {
+            "input_tokens": 485805,
+            "input_tokens_details": {
+              "cache_write_tokens": 485802,
+              "cached_tokens": 0
+            },
+            "output_tokens": 5388,
+            "output_tokens_details": {
+              "reasoning_tokens": 1615
+            },
+            "total_tokens": 491193
+          },
+          "cost_usd": null
+        }
+      ]
+    },
+    {
+      "run_id": "editorial-live-d1a0697d39204523a726bac648b59491",
+      "mode": "live",
+      "status": "failed",
+      "publication_authorized": false,
+      "counts": {
+        "discovered": 64,
+        "extracted": 59,
+        "eligible": 38,
+        "excluded": 27,
+        "articles": null,
+        "video_scripts": null,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 59,
+        "accepted": null,
+        "rejected": null,
+        "deferred": null
+      },
+      "source_coverage": {
+        "distinct_items": 38,
+        "by_kind": {
+          "feed": 34,
+          "podcast": 2,
+          "youtube": 2
+        },
+        "independent_publishers": [
+          "fctl",
+          "harvard",
+          "imf",
+          "mit",
+          "reuters",
+          "sigma",
+          "world-bank"
+        ],
+        "discovery_methods": {
+          "rss": 29,
+          "direct_webpage": 5,
+          "podcast_rss": 2,
+          "youtube": 2
+        }
+      },
+      "corpus_scope": "fresh_collection_and_verified_reuse",
+      "duplicate_observations": 0,
+      "failed_stages": [
+        "extract_content",
+        "collect_sources"
+      ],
+      "incomplete_stages": [
+        "select_items",
+        "create_briefs",
+        "write_articles",
+        "write_video_scripts",
+        "check_content"
+      ],
+      "errors": [],
+      "elapsed_seconds": 40.825985,
+      "known_cost_usd": 0,
+      "unknown_cost_stages": [
+        "extract_content",
+        "fetch_feeds",
+        "fetch_podcasts",
+        "fetch_youtube"
+      ],
+      "model_tool_use": [
+        {
+          "stage": "collect_sources",
+          "model": null,
+          "tool": "Python standard library",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "extract_content",
+          "model": null,
+          "tool": "Existing extraction/cache/yt_dlp",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "fetch_feeds",
+          "model": null,
+          "tool": "Python RSS / yt_dlp",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "fetch_podcasts",
+          "model": null,
+          "tool": "Python RSS / yt_dlp",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "fetch_youtube",
+          "model": null,
+          "tool": "Python RSS / yt_dlp",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "filter_items",
+          "model": null,
+          "tool": "Python standard library",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "store_init",
+          "model": null,
+          "tool": "SQLite",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "store_list",
+          "model": null,
+          "tool": "SQLite",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "store_list",
+          "model": null,
+          "tool": "SQLite",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "store_upsert",
+          "model": null,
+          "tool": "SQLite",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        }
+      ],
+      "coverage_limitations": [
+        "Collection infrastructure limitations remain explicit",
+        "Unmatched podcast candidates remain unprocessed; no new audio/transcription was authorized",
+        "Source media/caption context and interpretations require human verification"
+      ],
+      "published_links": null,
+      "remaining_manual_actions": [
+        "Resolve blocking review issues",
+        "Human final-content review",
+        "Video production",
+        "Separate publication authorization",
+        "Academic submission and technical demonstration"
+      ],
+      "cached_candidate_count": 6,
+      "fresh_discovery_count": 58,
+      "unprocessed_candidate_count": 4,
+      "api_usage": []
+    },
+    {
+      "run_id": "editorial-live-dde15262d0754684901d851f459baab6",
+      "mode": "live",
+      "status": "failed",
+      "publication_authorized": false,
+      "counts": {
+        "discovered": 64,
+        "extracted": 60,
+        "eligible": 38,
+        "excluded": 27,
+        "articles": null,
+        "video_scripts": null,
+        "new": 0,
+        "changed": 0,
+        "unchanged": 60,
+        "accepted": 18,
+        "rejected": 12,
+        "deferred": 8
+      },
+      "source_coverage": {
+        "distinct_items": 38,
+        "by_kind": {
+          "feed": 34,
+          "podcast": 2,
+          "youtube": 2
+        },
+        "independent_publishers": [
+          "fctl",
+          "harvard",
+          "imf",
+          "mit",
+          "reuters",
+          "sigma",
+          "world-bank"
+        ],
+        "discovery_methods": {
+          "rss": 29,
+          "direct_webpage": 5,
+          "podcast_rss": 2,
+          "youtube": 2
+        }
+      },
+      "corpus_scope": "fresh_collection_and_verified_reuse",
+      "duplicate_observations": 0,
+      "failed_stages": [
+        "create_briefs",
+        "create_series"
+      ],
+      "incomplete_stages": [
+        "write_articles",
+        "write_video_scripts",
+        "check_content"
+      ],
+      "errors": [],
+      "elapsed_seconds": 126.521346,
+      "known_cost_usd": 0,
+      "unknown_cost_stages": [
+        "create_briefs",
+        "extract_content",
+        "fetch_feeds",
+        "fetch_podcasts",
+        "fetch_youtube",
+        "select_items"
+      ],
+      "model_tool_use": [
+        {
+          "stage": "collect_sources",
+          "model": null,
+          "tool": "Python standard library",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "create_briefs",
+          "model": "gpt-6-luna",
+          "tool": "OpenAI Responses API",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": true,
+          "provider_request_attempted": true,
+          "usage": {
+            "input_tokens": 416057,
+            "input_tokens_details": {
+              "cache_write_tokens": 416054,
+              "cached_tokens": 0
+            },
+            "output_tokens": 6881,
+            "output_tokens_details": {
+              "reasoning_tokens": 2337
+            },
+            "total_tokens": 422938
+          }
+        },
+        {
+          "stage": "create_series",
+          "model": null,
+          "tool": "Python standard library",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "extract_content",
+          "model": null,
+          "tool": "Existing extraction/cache/yt_dlp",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "fetch_feeds",
+          "model": null,
+          "tool": "Python RSS / yt_dlp",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "fetch_podcasts",
+          "model": null,
+          "tool": "Python RSS / yt_dlp",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "fetch_youtube",
+          "model": null,
+          "tool": "Python RSS / yt_dlp",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "filter_items",
+          "model": null,
+          "tool": "Python standard library",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "select_items",
+          "model": "gpt-6-luna",
+          "tool": "OpenAI Responses API",
+          "cost_usd": null,
+          "response_mode": null,
+          "api_calls_performed": true,
+          "provider_request_attempted": true,
+          "usage": {
+            "input_tokens": 472858,
+            "input_tokens_details": {
+              "cache_write_tokens": 472855,
+              "cached_tokens": 0
+            },
+            "output_tokens": 5652,
+            "output_tokens_details": {
+              "reasoning_tokens": 1457
+            },
+            "total_tokens": 478510
+          }
+        },
+        {
+          "stage": "store_init",
+          "model": null,
+          "tool": "SQLite",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "store_list",
+          "model": null,
+          "tool": "SQLite",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "store_list",
+          "model": null,
+          "tool": "SQLite",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        },
+        {
+          "stage": "store_upsert",
+          "model": null,
+          "tool": "SQLite",
+          "cost_usd": 0,
+          "response_mode": null,
+          "api_calls_performed": null,
+          "provider_request_attempted": null,
+          "usage": null
+        }
+      ],
+      "coverage_limitations": [
+        "Collection infrastructure limitations remain explicit",
+        "Unmatched podcast candidates remain unprocessed; no new audio/transcription was authorized",
+        "Source media/caption context and interpretations require human verification"
+      ],
+      "published_links": null,
+      "remaining_manual_actions": [
+        "Resolve blocking review issues",
+        "Human final-content review",
+        "Video production",
+        "Separate publication authorization",
+        "Academic submission and technical demonstration"
+      ],
+      "cached_candidate_count": 6,
+      "fresh_discovery_count": 58,
+      "unprocessed_candidate_count": 4,
+      "api_usage": [
+        {
+          "stage": "create_briefs",
+          "mode": "model_response",
+          "model": "gpt-6-luna",
+          "usage": {
+            "input_tokens": 416057,
+            "input_tokens_details": {
+              "cache_write_tokens": 416054,
+              "cached_tokens": 0
+            },
+            "output_tokens": 6881,
+            "output_tokens_details": {
+              "reasoning_tokens": 2337
+            },
+            "total_tokens": 422938
+          },
+          "cost_usd": null
+        },
+        {
+          "stage": "select_items",
+          "mode": "model_response",
+          "model": "gpt-6-luna",
+          "usage": {
+            "input_tokens": 472858,
+            "input_tokens_details": {
+              "cache_write_tokens": 472855,
+              "cached_tokens": 0
+            },
+            "output_tokens": 5652,
+            "output_tokens_details": {
+              "reasoning_tokens": 1457
+            },
+            "total_tokens": 478510
+          },
+          "cost_usd": null
+        }
+      ]
+    }
+  ],
+  "run_summary_sources": [
+    {
+      "path": "runs/editorial-live-064ea894fd3d49a981b19dca77a0729b/summary.json",
+      "sha256": "c6276a5048bfe5fa8b3390c7cb41599110091814259ff81535db8d97d46fd1ec"
+    },
+    {
+      "path": "runs/editorial-live-d1a0697d39204523a726bac648b59491/summary.json",
+      "sha256": "91afaefe02501135053565082947e5d3c141f9383b965703b917bdbe08809f52"
+    },
+    {
+      "path": "runs/editorial-live-dde15262d0754684901d851f459baab6/summary.json",
+      "sha256": "022e996b0d16265bc450b9ec1c33af70ebb93ded712dd9e42a5df30b9c53b26d"
+    }
+  ],
+  "stage_receipts": [
+    {
+      "original_path": "runs/editorial-live-064ea894fd3d49a981b19dca77a0729b/logs/select_items-ee06e065ee7c4add8730ff683a1489a3.json",
+      "original_file_sha256": "a98835f7fb50082ce465f5bd88d7ad65e324789e61d08b70ea512fe23c13d53d",
+      "record": {
+        "stage": "select_items",
+        "status": "failure",
+        "started_at": "2026-10-14T19:03:09.797158Z",
+        "finished_at": "2026-10-14T19:04:06.863331Z",
+        "input_count": 38,
+        "output_count": null,
+        "tool": "OpenAI Responses API",
+        "model": "gpt-6-luna",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "errors": [
+          "One decision required per eligible item"
+        ],
+        "request_sha256": "85bb971cd9d991d3ecc6b211a51d81f540cc8b4f58cafb1192c522ac13f5325d",
+        "api_calls_performed": true,
+        "provider_request_attempted": true,
+        "usage": {
+          "input_tokens": 485805,
+          "input_tokens_details": {
+            "cache_write_tokens": 485802,
+            "cached_tokens": 0
+          },
+          "output_tokens": 5388,
+          "output_tokens_details": {
+            "reasoning_tokens": 1615
+          },
+          "total_tokens": 491193
+        }
+      }
+    },
+    {
+      "original_path": "runs/editorial-live-d1a0697d39204523a726bac648b59491/logs/extract_content-50d7f489bf614e4383739273b8aadc20.json",
+      "original_file_sha256": "96931602a392d026069a24a01d37e4be3884dc672d836b6faddd73e3e34ba154",
+      "record": {
+        "stage": "extract_content",
+        "status": "partial",
+        "started_at": "2026-10-14T21:02:04.628182Z",
+        "finished_at": "2026-10-14T21:02:29.458580Z",
+        "input_count": 64,
+        "output_count": 59,
+        "tool": "Existing extraction/cache/yt_dlp",
+        "model": null,
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "errors": [
+          {
+            "item_id": "youtube:1FeLhg9HqfE",
+            "error": "Source extraction failed"
+          }
+        ],
+        "transcription_performed": false,
+        "unprocessed_podcast_candidates": 4
+      }
+    },
+    {
+      "original_path": "runs/editorial-live-dde15262d0754684901d851f459baab6/logs/select_items-6195d25bd98f498aaeba9f5630fc2d6b.json",
+      "original_file_sha256": "e61a5df7ac222d114079ec1cd438cec104fc47d4a43bf1b847d91ed6c1e93a30",
+      "record": {
+        "stage": "select_items",
+        "status": "success",
+        "started_at": "2026-10-14T22:13:51.611837Z",
+        "finished_at": "2026-10-14T22:14:40.312783Z",
+        "input_count": 38,
+        "output_count": 38,
+        "tool": "OpenAI Responses API",
+        "model": "gpt-6-luna",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "errors": [],
+        "request_sha256": "64728b2b843c575a93d31793ee6a833abd8b0a80e375f889962f4a6f0c392f8c",
+        "api_calls_performed": true,
+        "provider_request_attempted": true,
+        "usage": {
+          "input_tokens": 472858,
+          "input_tokens_details": {
+            "cache_write_tokens": 472855,
+            "cached_tokens": 0
+          },
+          "output_tokens": 5652,
+          "output_tokens_details": {
+            "reasoning_tokens": 1457
+          },
+          "total_tokens": 478510
+        },
+        "raw_response_path": "logs/diagnostics/select_items-raw-64728b2b843c575a93d31793ee6a833abd8b0a80e375f889962f4a6f0c392f8c-a2d2bd6cc241af3b.json",
+        "raw_response_sha256": "a2d2bd6cc241af3b561fa5a27acbe5989492542b466b4f639eb22306640a5f3d",
+        "human_decisions_changed": false
+      }
+    },
+    {
+      "original_path": "runs/editorial-live-dde15262d0754684901d851f459baab6/logs/create_briefs-9b9a6873f8094353a8e675077b543cc1.json",
+      "original_file_sha256": "015cfdd1cda033dc9d9da34df44ef0829be6ff8703e6e9cb38135890e7454b48",
+      "record": {
+        "stage": "create_briefs",
+        "status": "failure",
+        "started_at": "2026-10-14T22:14:40.907314Z",
+        "finished_at": "2026-10-14T22:15:34.901857Z",
+        "input_count": 38,
+        "output_count": null,
+        "tool": "OpenAI Responses API",
+        "model": "gpt-6-luna",
+        "cost_usd": null,
+        "cost_is_estimate": false,
+        "errors": [
+          "Unaccepted or unassigned quotation source"
+        ],
+        "request_sha256": "47184fef03fc0ccedae16ddab2495e0181c47f0bca56be6d7226fd049dcd9739",
+        "api_calls_performed": true,
+        "provider_request_attempted": true,
+        "usage": {
+          "input_tokens": 416057,
+          "input_tokens_details": {
+            "cache_write_tokens": 416054,
+            "cached_tokens": 0
+          },
+          "output_tokens": 6881,
+          "output_tokens_details": {
+            "reasoning_tokens": 2337
+          },
+          "total_tokens": 422938
+        }
+      }
+    }
+  ],
+  "source_samples": [
+    {
+      "original_item_record": {
+        "item_id": "feed:48f774f0bb11de5c34ef",
+        "source_id": "world-bank-institutional",
+        "publisher_id": "world-bank",
+        "kind": "feed",
+        "title": "Decoding AI: What the Promise of AI Means for Developing Economies",
+        "url": "https://blogs.worldbank.org/en/developmenttalk/decoding-ai---what-the-promise-of-artificial-intelligence-means-",
+        "published_at": "2026-09-22T00:00:00Z",
+        "retrieved_at": "2026-10-11T04:04:17.967953Z",
+        "media_url": null,
+        "version_id": "293f5c7caf77f87f5aedea357a654b5b9cae5329ca5d98b9fd7ba3d6c2a6cb3c",
+        "text_path": "C:\\Users\\gueva\\OneDrive\\Documentos\\1_MITCourses\\_AgenticAI2026\\ps04\\runs\\editorial-prep\\assets\\text\\5594be3400d372330ac8\\293f5c7caf77f87f5aedea357a654b5b9cae5329ca5d98b9fd7ba3d6c2a6cb3c.txt",
+        "segments_path": null
+      },
+      "source_text_sha256": "293f5c7caf77f87f5aedea357a654b5b9cae5329ca5d98b9fd7ba3d6c2a6cb3c",
+      "sample_only": true,
+      "complete_original_assets_included": false,
+      "claim_sample": {
+        "claim_id": "01-c1",
+        "statement": "The World Bank argues that, in many developing economies, the policy opportunity is to extend scarce expertise, while warning that control of advanced models and infrastructure is concentrated.",
+        "type": "source_claim",
+        "evidence": [
+          {
+            "item_id": "feed:48f774f0bb11de5c34ef",
+            "version_id": "293f5c7caf77f87f5aedea357a654b5b9cae5329ca5d98b9fd7ba3d6c2a6cb3c",
+            "locator": {
+              "type": "text",
+              "quote": "In much of the developing world, the problem is too few skilled workers, not too many — too few doctors to diagnose disease, too few agronomists to advise farmers, too few officials to deliver services."
+            }
+          },
+          {
+            "item_id": "feed:48f774f0bb11de5c34ef",
+            "version_id": "293f5c7caf77f87f5aedea357a654b5b9cae5329ca5d98b9fd7ba3d6c2a6cb3c",
+            "locator": {
+              "type": "text",
+              "quote": "A few companies in a few economies control the most advanced AI models, the chips they depend on, and the data centers that run them."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "original_item_record": {
+        "item_id": "podcast:54e93bb11c79c9a2fc0b",
+        "source_id": "reuters-econ-world",
+        "publisher_id": "reuters",
+        "kind": "podcast",
+        "title": "AI at work",
+        "url": "https://pdst.fm/e/traffic.megaphone.fm/THRH6042123585.mp3",
+        "published_at": "2026-10-07T13:00:00Z",
+        "retrieved_at": "2026-10-11T03:17:11.802903Z",
+        "media_url": "https://pdst.fm/e/traffic.megaphone.fm/THRH6042123585.mp3",
+        "version_id": "d8647b7aa3c4202a82d8be7882bce19ea1fd2b19d396b0f255815aead78fa6c2",
+        "text_path": "C:\\Users\\gueva\\OneDrive\\Documentos\\1_MITCourses\\_AgenticAI2026\\ps04\\runs\\test-podcasts\\assets\\text\\e118e93432095247c38e\\d8647b7aa3c4202a82d8be7882bce19ea1fd2b19d396b0f255815aead78fa6c2.txt",
+        "segments_path": "C:\\Users\\gueva\\OneDrive\\Documentos\\1_MITCourses\\_AgenticAI2026\\ps04\\runs\\test-podcasts\\assets\\segments\\e118e93432095247c38e\\d8647b7aa3c4202a82d8be7882bce19ea1fd2b19d396b0f255815aead78fa6c2_c5a51242a198b404feb364c9c1d1ec74b83070a3f75bafcf6f5eef3eeed00ac6.json"
+      },
+      "source_text_sha256": "d8647b7aa3c4202a82d8be7882bce19ea1fd2b19d396b0f255815aead78fa6c2",
+      "sample_only": true,
+      "complete_original_assets_included": false,
+      "segments_sha256": "c5a51242a198b404feb364c9c1d1ec74b83070a3f75bafcf6f5eef3eeed00ac6",
+      "segment_count": 498,
+      "representative_segment": {
+        "segment_id": "seg-00030",
+        "start_seconds": 96.19999694824219,
+        "end_seconds": 102.36000061035156,
+        "text": "Well, right now, it's better to use a microscope than a telescope, because the changes that"
+      }
+    },
+    {
+      "original_item_record": {
+        "item_id": "youtube:1FeLhg9HqfE",
+        "source_id": "sigma-civil-servants",
+        "publisher_id": "sigma",
+        "kind": "youtube",
+        "title": "SIGMA Webinar | The use of artificial intelligence (AI) by civil servants",
+        "url": "https://www.youtube.com/watch?v=1FeLhg9HqfE",
+        "published_at": "2026-09-23T00:00:00Z",
+        "retrieved_at": "2026-10-11T03:37:29.964938Z",
+        "media_url": "https://www.youtube.com/watch?v=1FeLhg9HqfE",
+        "version_id": "f8383106836818db435127f0842912c7f8aa682e8009d672dbf2293a5126f66e",
+        "text_path": "C:\\Users\\gueva\\OneDrive\\Documentos\\1_MITCourses\\_AgenticAI2026\\ps04\\runs\\youtube-recent\\assets\\text\\49814c091c014c4852cb\\f8383106836818db435127f0842912c7f8aa682e8009d672dbf2293a5126f66e.txt",
+        "segments_path": "C:\\Users\\gueva\\OneDrive\\Documentos\\1_MITCourses\\_AgenticAI2026\\ps04\\runs\\youtube-recent\\assets\\segments\\49814c091c014c4852cb\\f8383106836818db435127f0842912c7f8aa682e8009d672dbf2293a5126f66e_f59ca1b0906dca356581351347792d8be8a7b1358f74026f246c913b4f2e4ed8.json"
+      },
+      "source_text_sha256": "f8383106836818db435127f0842912c7f8aa682e8009d672dbf2293a5126f66e",
+      "sample_only": true,
+      "complete_original_assets_included": false,
+      "segments_sha256": "f59ca1b0906dca356581351347792d8be8a7b1358f74026f246c913b4f2e4ed8",
+      "segment_count": 4788,
+      "representative_segment": {
+        "segment_id": "seg-00001",
+        "start_seconds": 3.27,
+        "end_seconds": 3.28,
+        "text": "So let's start the webinar. My name is"
+      }
+    }
+  ],
+  "human_policy_review_v1": {
+    "review_id": "b1af65940009d7f0",
+    "policy_version": "v1",
+    "review_type": "human_editorial_selection",
+    "confirmation_source": "user_message_in_chat",
+    "confirmation": "Confirmo como editor humano a selecao editorial V1: 9 ACCEPT, 2 DEFER e 1 REJECT. Registar a revisao humana sem autorizar publicacao.",
+    "recorded_at_utc": "2026-10-11T15:41:52Z",
+    "recommendations_sha256": "135f15e74455906762c8ad6120ff99a454c990815cf15df48a36c3eb02e31a77",
+    "policy_sha256": "cb1be0631cefc6a581b709e80d7038af1a4003505551ee6697880d6dd8c65a35",
+    "total_decisions": 12,
+    "decisions": {
+      "ACCEPT": 9,
+      "DEFER": 2,
+      "REJECT": 1
+    },
+    "publication_authorized": false,
+    "publication_status": "NOT_AUTHORIZED"
+  },
+  "human_policy_approval_v2": {
+    "approval_id": "a589cd099dee6f96",
+    "approval_type": "human_editorial_policy_approval",
+    "source": "user_confirmation_in_chat",
+    "recorded_at_utc": "2026-10-11T15:51:21Z",
+    "policy_version": "v2",
+    "prior_review_id": "b1af65940009d7f0",
+    "unchanged_decisions_carried_forward": 11,
+    "changes_explicitly_approved": [
+      {
+        "item_id": "feed:4564112263663773",
+        "title": "Using AI to mitigate the growing environmental threat of data centers",
+        "from": "REJECT",
+        "to": "DEFER"
+      }
+    ],
+    "human_decisions": {
+      "ACCEPT": 9,
+      "DEFER": 3,
+      "REJECT": 0
+    },
+    "policy_sha256": "92f79fe975c33b302d069b52b639b3e6c344fb8a4b08cb41867ee9c0291f8126",
+    "publication_authorized": false,
+    "publication_status": "NOT_AUTHORIZED"
+  },
+  "human_decisions_v2": [
+    {
+      "item_id": "feed:8242ffb6d0f0509890f5",
+      "version_id": "23fa9c416e290726b7dfc8f02618732d893f20572e94c50130ce33b716d5f9c1",
+      "publisher_id": "harvard",
+      "title": "Why AI hasn't triggered mass layoffs yet",
+      "policy_version": "v2",
+      "ai_recommendation": "ACCEPT",
+      "ai_reason": "Challenges simplified predictions of AI-driven unemployment.",
+      "human_review_status": "confirmed",
+      "human_decision": "ACCEPT",
+      "human_note": null,
+      "previous_ai_recommendation": "ACCEPT",
+      "human_decision_provenance": "carried_forward_from_v1_human_review",
+      "reviewed_at_utc": "2026-10-11T15:41:52Z",
+      "review_id": "b1af65940009d7f0",
+      "v2_approval_id": "a589cd099dee6f96",
+      "publication_authorized": false
+    },
+    {
+      "item_id": "feed:cc11de4a9b0277b37619",
+      "version_id": "9588975e3ccf114e6eae2396859c6ec8e1df2c27d2aed975e10bcfea70dac351",
+      "publisher_id": "mit-sloan",
+      "title": "Lessons from Kaiser Permanente's AI labor deal",
+      "policy_version": "v2",
+      "ai_recommendation": "ACCEPT",
+      "ai_reason": "Provides a labor-participation perspective on AI adoption.",
+      "human_review_status": "confirmed",
+      "human_decision": "ACCEPT",
+      "human_note": null,
+      "previous_ai_recommendation": "ACCEPT",
+      "human_decision_provenance": "carried_forward_from_v1_human_review",
+      "reviewed_at_utc": "2026-10-11T15:41:52Z",
+      "review_id": "b1af65940009d7f0",
+      "v2_approval_id": "a589cd099dee6f96",
+      "publication_authorized": false
+    },
+    {
+      "item_id": "feed:5924aebf8110d4f48238",
+      "version_id": "4a8f1d30ae69c8603d3a26bff55ab196ef13e453643e9b1487e8c30563f3f3b1",
+      "publisher_id": "mit-sloan",
+      "title": "A framework for determining when AI can make decisions",
+      "policy_version": "v2",
+      "ai_recommendation": "ACCEPT",
+      "ai_reason": "Relevant framework for automation and human oversight.",
+      "human_review_status": "confirmed",
+      "human_decision": "ACCEPT",
+      "human_note": null,
+      "previous_ai_recommendation": "ACCEPT",
+      "human_decision_provenance": "carried_forward_from_v1_human_review",
+      "reviewed_at_utc": "2026-10-11T15:41:52Z",
+      "review_id": "b1af65940009d7f0",
+      "v2_approval_id": "a589cd099dee6f96",
+      "publication_authorized": false
+    },
+    {
+      "item_id": "feed:48f774f0bb11de5c34ef",
+      "version_id": "293f5c7caf77f87f5aedea357a654b5b9cae5329ca5d98b9fd7ba3d6c2a6cb3c",
+      "publisher_id": "world-bank",
+      "title": "Decoding AI: What the Promise of AI Means for Developing Economies",
+      "policy_version": "v2",
+      "ai_recommendation": "ACCEPT",
+      "ai_reason": "Adds the developing-economy perspective.",
+      "human_review_status": "confirmed",
+      "human_decision": "ACCEPT",
+      "human_note": null,
+      "previous_ai_recommendation": "ACCEPT",
+      "human_decision_provenance": "carried_forward_from_v1_human_review",
+      "reviewed_at_utc": "2026-10-11T15:41:52Z",
+      "review_id": "b1af65940009d7f0",
+      "v2_approval_id": "a589cd099dee6f96",
+      "publication_authorized": false
+    },
+    {
+      "item_id": "feed:ffcd4aee89c680fb7b22",
+      "version_id": "ef12ecf7f8177d7f05eb0e7ea0ff2513498cced0327a64e235e3553264e85dd0",
+      "publisher_id": "world-bank",
+      "title": "From AI Pilots to Scale: Improving Public Services",
+      "policy_version": "v2",
+      "ai_recommendation": "ACCEPT",
+      "ai_reason": "Direct relevance to institutional capacity and public services.",
+      "human_review_status": "confirmed",
+      "human_decision": "ACCEPT",
+      "human_note": null,
+      "previous_ai_recommendation": "ACCEPT",
+      "human_decision_provenance": "carried_forward_from_v1_human_review",
+      "reviewed_at_utc": "2026-10-11T15:41:52Z",
+      "review_id": "b1af65940009d7f0",
+      "v2_approval_id": "a589cd099dee6f96",
+      "publication_authorized": false
+    },
+    {
+      "item_id": "podcast:7f8cbebe3198e9935606",
+      "version_id": "82c28a85894d7a693b0d6ea8a688b85cf6c87da0269457e8ba3ede4ec87eab40",
+      "publisher_id": "imf",
+      "title": "Mehran Gul on the Innovation Blindspot",
+      "policy_version": "v2",
+      "ai_recommendation": "ACCEPT",
+      "ai_reason": "Contributes perspectives on innovation and productivity.",
+      "human_review_status": "confirmed",
+      "human_decision": "ACCEPT",
+      "human_note": null,
+      "previous_ai_recommendation": "ACCEPT",
+      "human_decision_provenance": "carried_forward_from_v1_human_review",
+      "reviewed_at_utc": "2026-10-11T15:41:52Z",
+      "review_id": "b1af65940009d7f0",
+      "v2_approval_id": "a589cd099dee6f96",
+      "publication_authorized": false
+    },
+    {
+      "item_id": "podcast:54e93bb11c79c9a2fc0b",
+      "version_id": "d8647b7aa3c4202a82d8be7882bce19ea1fd2b19d396b0f255815aead78fa6c2",
+      "publisher_id": "reuters",
+      "title": "AI at work",
+      "policy_version": "v2",
+      "ai_recommendation": "ACCEPT",
+      "ai_reason": "Relevant evidence and viewpoints on workforce transformation.",
+      "human_review_status": "confirmed",
+      "human_decision": "ACCEPT",
+      "human_note": null,
+      "previous_ai_recommendation": "ACCEPT",
+      "human_decision_provenance": "carried_forward_from_v1_human_review",
+      "reviewed_at_utc": "2026-10-11T15:41:52Z",
+      "review_id": "b1af65940009d7f0",
+      "v2_approval_id": "a589cd099dee6f96",
+      "publication_authorized": false
+    },
+    {
+      "item_id": "youtube:KgI2_dKnpk0",
+      "version_id": "20ae563755fec8931565949ce12bc5dd6737b7e431f5f3a72e784317b279d007",
+      "publisher_id": "fctl",
+      "title": "September 2026: What do the Essential Skills Look Like in an AI-Enhanced World?",
+      "policy_version": "v2",
+      "ai_recommendation": "ACCEPT",
+      "ai_reason": "Focuses on capabilities required in an AI-enhanced workplace.",
+      "human_review_status": "confirmed",
+      "human_decision": "ACCEPT",
+      "human_note": null,
+      "previous_ai_recommendation": "ACCEPT",
+      "human_decision_provenance": "carried_forward_from_v1_human_review",
+      "reviewed_at_utc": "2026-10-11T15:41:52Z",
+      "review_id": "b1af65940009d7f0",
+      "v2_approval_id": "a589cd099dee6f96",
+      "publication_authorized": false
+    },
+    {
+      "item_id": "youtube:1FeLhg9HqfE",
+      "version_id": "f8383106836818db435127f0842912c7f8aa682e8009d672dbf2293a5126f66e",
+      "publisher_id": "sigma",
+      "title": "SIGMA Webinar | The use of artificial intelligence (AI) by civil servants",
+      "policy_version": "v2",
+      "ai_recommendation": "ACCEPT",
+      "ai_reason": "Direct relevance to AI adoption in public administration.",
+      "human_review_status": "confirmed",
+      "human_decision": "ACCEPT",
+      "human_note": null,
+      "previous_ai_recommendation": "ACCEPT",
+      "human_decision_provenance": "carried_forward_from_v1_human_review",
+      "reviewed_at_utc": "2026-10-11T15:41:52Z",
+      "review_id": "b1af65940009d7f0",
+      "v2_approval_id": "a589cd099dee6f96",
+      "publication_authorized": false
+    },
+    {
+      "item_id": "feed:876267fe4c4097ee",
+      "version_id": "a3f8d75741e45f940e78a856a3f5cd284cd13988d72ecac16733d348d9b5e894",
+      "publisher_id": "mit",
+      "title": "3 Questions: What is the best path forward for AI in academia?",
+      "policy_version": "v2",
+      "ai_recommendation": "DEFER",
+      "ai_reason": "Primarily focused on higher education rather than public administration.",
+      "human_review_status": "confirmed",
+      "human_decision": "DEFER",
+      "human_note": null,
+      "previous_ai_recommendation": "DEFER",
+      "human_decision_provenance": "carried_forward_from_v1_human_review",
+      "reviewed_at_utc": "2026-10-11T15:41:52Z",
+      "review_id": "b1af65940009d7f0",
+      "v2_approval_id": "a589cd099dee6f96",
+      "publication_authorized": false
+    },
+    {
+      "item_id": "feed:eb7eb8762462fed1",
+      "version_id": "8355a873d6a10919575ebd125aba0c4cc555e24b0a148492692721e3c247b001",
+      "publisher_id": "mit",
+      "title": "Discovering the value of humanistic inquiry",
+      "policy_version": "v2",
+      "ai_recommendation": "DEFER",
+      "ai_reason": "Useful interpretive perspective; empirical linkage needs review.",
+      "human_review_status": "confirmed",
+      "human_decision": "DEFER",
+      "human_note": null,
+      "previous_ai_recommendation": "DEFER",
+      "human_decision_provenance": "carried_forward_from_v1_human_review",
+      "reviewed_at_utc": "2026-10-11T15:41:52Z",
+      "review_id": "b1af65940009d7f0",
+      "v2_approval_id": "a589cd099dee6f96",
+      "publication_authorized": false
+    },
+    {
+      "item_id": "feed:4564112263663773",
+      "version_id": "df331e0160fe2687b8ad32123a458d0d6caf61164c256c343ca64a5b285f6ef4",
+      "publisher_id": "mit",
+      "title": "Using AI to mitigate the growing environmental threat of data centers",
+      "policy_version": "v2",
+      "ai_recommendation": "DEFER",
+      "ai_reason": "V2: infrastructure and energy constraints may affect sustainable public-sector AI adoption; direct relevance requires review.",
+      "human_review_status": "confirmed",
+      "human_decision": "DEFER",
+      "human_note": null,
+      "previous_ai_recommendation": "REJECT",
+      "human_decision_provenance": "explicit_v2_user_approval",
+      "reviewed_at_utc": "2026-10-11T15:51:21Z",
+      "review_id": "a589cd099dee6f96",
+      "v2_approval_id": "a589cd099dee6f96",
+      "publication_authorized": false
+    }
+  ],
+  "third_run_failure": {
+    "raw_response_original_path": "runs/editorial-live-dde15262d0754684901d851f459baab6/model_responses/create_briefs.json",
+    "raw_response_file_sha256": "9f6015ae33ae9541cfb5bb02da6dda8f04b1cb6fa342055d668c6e73057eb2f7",
+    "claim": {
+      "claim_id": "01-c3",
+      "statement": "The MIT Sloan account describes a Kaiser Permanente agreement that included worker input at stages of AI development and use, illustrating one private-sector approach to workplace participation rather than demonstrating a government-sector outcome.",
+      "type": "source_claim",
+      "evidence": [
+        {
+          "item_id": "feed:cc11de4a9b0277b37619",
+          "version_id": "9588975e3ccf114e6eae2396859c6ec8e1df2c27d2aed975e10bcfea70dac351",
+          "locator": {
+            "type": "text",
+            "start_passage_id": "p0024@e42cca5c0b2db295150ec9237121881b4bad85d68bb88312b78343d08b16f345",
+            "end_passage_id": "p0024@e42cca5c0b2db295150ec9237121881b4bad85d68bb88312b78343d08b16f345"
+          }
+        },
+        {
+          "item_id": "feed:cc11de4a9b0277b37619",
+          "version_id": "9588975e3ccf114e6eae2396859c6ec8e1df2c27d2aed975e10bcfea70dac351",
+          "locator": {
+            "type": "text",
+            "start_passage_id": "p0046@5203cc45d6c9656629121d2ef7437d23e7dd421fc1fb78444223fbf54d7f6c31",
+            "end_passage_id": "p0048@8e3b69e6f134bd470fa1ad6f6ea942e54cb308c5f79c40ca0a22c668acb6e35c"
+          }
+        }
+      ]
+    },
+    "actual_decision": {
+      "decision": "accept",
+      "human_decision_provenance": "carried_forward_from_v1_human_review",
+      "human_review_status": "confirmed",
+      "item_id": "feed:cc11de4a9b0277b37619",
+      "piece_ids": [
+        "02",
+        "03"
+      ],
+      "publication_authorized": false,
+      "reason": "Preserve the historical human-confirmed acceptance. The article describes a labor-management agreement that gave workers input into AI planning and deployment, making it useful workforce-governance context; it concerns a private healthcare employer and should not be generalized as evidence about government agencies.",
+      "source_approval_id": "a589cd099dee6f96",
+      "version_id": "9588975e3ccf114e6eae2396859c6ec8e1df2c27d2aed975e10bcfea70dac351"
+    },
+    "offending_reference_count": 2,
+    "cause": "ACCEPT but assigned only to 02 and 03; quoted in 01"
+  },
+  "recorded_offline_tests": {
+    "source": "External Mission 32B validation.json; original remains local",
+    "source_sha256": "a2b70ab9dab25673bc4aae5239c2f4dff745d8d94e6077bfc39c7feffc85310a",
+    "tests": {
+      "focused": {
+        "passed": 50,
+        "seconds": 78.742,
+        "log": "media-tests.log"
+      },
+      "regression": {
+        "passed": 137,
+        "seconds": 96.147,
+        "log": "regression-tests.log"
+      }
+    },
+    "test_environment": "External full copy; established historical-path relocation and Windows long-path harness; API credentials removed, socket/DNS connections denied; all external interactions mocked.",
+    "new_reuse_tests_passed": 22,
+    "previous_tests_passed": 115,
+    "network_calls": 0,
+    "api_calls": 0,
+    "rerun_for_submission": false
+  },
+  "academic_use_approval": {
+    "authority": "Researcher final academic submission preparation instruction in this conversation",
+    "scope": "Three academic briefings approved for internal academic use only",
+    "historical_m22_final_content_status": "PENDING",
+    "historical_records_modified": false,
+    "publication_authorized": false
+  }
+}

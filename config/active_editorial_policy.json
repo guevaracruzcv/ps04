@@ -1,0 +1,8 @@
+{
+  "active_policy_version": "v2",
+  "active_policy_path": "config/editorial_policy.md",
+  "policy_sha256": "92f79fe975c33b302d069b52b639b3e6c344fb8a4b08cb41867ee9c0291f8126",
+  "approval_event": "runs/editorial-prep/human_approval_v2.json",
+  "approval_id": "a589cd099dee6f96",
+  "publication_authorized": false
+}

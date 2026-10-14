@@ -1,0 +1,38 @@
+[
+  {
+    "source_id": "mit-ai-news",
+    "publisher_id": "mit",
+    "kind": "feed",
+    "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
+  },
+  {
+    "source_id": "imf-podcasts",
+    "publisher_id": "imf",
+    "kind": "podcast",
+    "url": "https://rss.libsyn.com/shows/78322/destinations/355221.xml"
+  },
+  {
+    "source_id": "world-bank-development",
+    "publisher_id": "world-bank",
+    "kind": "podcast",
+    "url": "https://world-bank-development-podcast.captivate.fm/rssfeed"
+  },
+  {
+    "source_id": "reuters-econ-world",
+    "publisher_id": "reuters",
+    "kind": "podcast",
+    "url": "https://feeds.megaphone.fm/reuterseconworld"
+  },
+  {
+    "kind": "youtube",
+    "source_id": "sigma-civil-servants",
+    "publisher_id": "sigma",
+    "url": "https://www.youtube.com/watch?v=1FeLhg9HqfE"
+  },
+  {
+    "kind": "youtube",
+    "source_id": "fctl-skills",
+    "publisher_id": "fctl",
+    "url": "https://www.youtube.com/watch?v=KgI2_dKnpk0"
+  }
+]

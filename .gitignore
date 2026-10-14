@@ -1,0 +1,36 @@
+# PS04 - Files excluded from Git
+
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.venv/
+venv/
+
+# Python generated files
+__pycache__/
+*.pyc
+*.pyo
+
+# Operational evidence and databases
+runs/
+data/raw/
+data/evidence/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Temporary backups and logs
+*.bak
+*.backup
+*.before_*
+*.tmp
+*.log
+
+# Windows and macOS files
+Thumbs.db
+.DS_Store

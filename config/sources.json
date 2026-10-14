@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "source_id": "mit-ai-news",
+    "publisher_id": "mit",
+    "kind": "feed",
+    "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"
+  }
+]
