@@ -175,7 +175,7 @@ The tradeoff was strong provenance and immutable evidence versus large model req
 - Three Substack articles and three audience-facing videos: **Not published**.
 - Separate technical demonstration: **Not completed**.
 - Final reviewed production package from these attempts: **Not completed**.
-- Reviewed final GitHub commit/push: **Not completed**; awaiting researcher review.
+- Reviewed final GitHub academic submission: **Completed** to [guevaracruzcv/ps04](https://github.com/guevaracruzcv/ps04), branch `main`, following explicit researcher approval of the 86-path inventory. The existing LICENSE history was preserved. This upload does not complete the missing academic deliverables.
 - Actual API cost reconciliation: **Not completed**.
 
 The original assignment requirements were not fully met. Submission documentation records the work and its limits without inventing deliverables.
