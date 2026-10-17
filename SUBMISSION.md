@@ -38,7 +38,7 @@ Titles identify consolidated academic briefings, not publications. Earlier files
 | 02 | Public-sector AI claims need context, controls and human accountability | Not published | Not published |
 | 03 | From AI pilots to public value: build capacity, test carefully and keep people accountable | Not published | Not published |
 
-**Separate 4-6 minute technical demonstration:** Not completed. The [older recording runbook](docs/TECHNICAL_DEMO_RUNBOOK.md) is a guide, not a video or proof of completion.
+**Separate 4-6 minute technical demonstration:** [Watch the narrated technical demonstration (OneDrive; reported duration 6:00)](https://1drv.ms/v/c/a6a91cb71160b1a9/IQDjf70ANiv3RY4SJoVE4Rp7AfjGKRDAuxZqGq-f0R0uxos?e=ICQycn). Recorded and shared by the researcher. Access for external reviewers has not been independently verified. The [older recording runbook](docs/TECHNICAL_DEMO_RUNBOOK.md) is only a guide, not the demonstration video.
 
 ## Setup and Execution
 
@@ -173,7 +173,7 @@ The tradeoff was strong provenance and immutable evidence versus large model req
 - Three internally approved academic briefings: available as historical analyses.
 - Successful end-to-end runs on different days: **Not completed (0/2)**.
 - Three Substack articles and three audience-facing videos: **Not published**.
-- Separate technical demonstration: **Not completed**.
+- Separate technical demonstration: **Recorded and shared** — [OneDrive video (reported 6:00)](https://1drv.ms/v/c/a6a91cb71160b1a9/IQDjf70ANiv3RY4SJoVE4Rp7AfjGKRDAuxZqGq-f0R0uxos?e=ICQycn). External reviewer access remains unverified.
 - Final reviewed production package from these attempts: **Not completed**.
 - Reviewed final GitHub academic submission: **Completed** to [guevaracruzcv/ps04](https://github.com/guevaracruzcv/ps04), branch `main`, following explicit researcher approval of the 86-path inventory. The existing LICENSE history was preserved. This upload does not complete the missing academic deliverables.
 - Actual API cost reconciliation: **Not completed**.
